@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <input type="checkbox" id="theme-toggle" hidden>
+    <div class="toggle-wrapper">
+
+        <!-- Navigation Bar -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <div class="toggle-container">
+                            <label for="theme-toggle" class="toggle-btn"></label>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Manojit Biswas</h1>
+                <p>I'm a Web Developer</p>
+                <!-- <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div> -->
+                <div class="social-media">
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="images/about.png" alt="image">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Hi , I'm Here To Help You With Your Next Project!</h3>
+                <p>
+                    I'm a passionate Frontend Web Developer with a strong focus on creating visually stunning and highly
+                    functional websites.
+                    With expertise in HTML, CSS, JavaScript, and modern frameworks like React, I specialize in building
+                    responsive,
+                    user-friendly interfaces that work seamlessly across all devices. Whether you're a startup looking
+                    to
+                    establish your
+                    online presence or a business aiming to enhance your digital footprint, I can help you design and
+                    develop a website
+                    that not only looks great but also delivers an exceptional user experience.
+                </p>
+                <p>
+                    My approach combines creativity with technical precision, ensuring that every project I work on is
+                    both
+                    aesthetically
+                    pleasing and technically robust. I believe in clean, maintainable code and staying up-to-date with
+                    the
+                    latest web
+                    development trends and best practices. Let's collaborate to bring your ideas to life and create
+                    something truly
+                    remarkable!
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2 class="heading">My <span>Skills</span></h2>
+            <div class="skills-container">
+
+                <!-- Left side: Progress Bars -->
+                <div class="skills-left">
+                    <div class="skill">
+                        <p>HTML</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side: Circular Progress Indicators -->
+                <div class="skills-right">
+                    <div class="circle">
+                        <svg>
+                            <circle cx="50" cy="50" r="40"></circle>
+                            <circle cx="50" cy="50" r="40" style="stroke-dasharray: 251; stroke-dashoffset: 50;">
+                            </circle>
+                        </svg>
+                        <span>85%</span>
+                        <p>Team Work</p>
+                    </div>
+                    <div class="circle">
+                        <svg>
+                            <circle cx="50" cy="50" r="40"></circle>
+                            <circle cx="50" cy="50" r="40" style="stroke-dasharray: 251; stroke-dashoffset: 25;">
+                            </circle>
+                        </svg>
+                        <span>90%</span>
+                        <p>Creativity</p>
+                    </div>
+                    <div class="circle">
+                        <svg>
+                            <circle cx="50" cy="50" r="40"></circle>
+                            <circle cx="50" cy="50" r="40" style="stroke-dasharray: 251; stroke-dashoffset: 25;">
+                            </circle>
+                        </svg>
+                        <span>81%</span>
+                        <p>Problem Solving</p>
+                    </div>
+                    <div class="circle">
+                        <svg>
+                            <circle cx="50" cy="50" r="40"></circle>
+                            <circle cx="50" cy="50" r="40" style="stroke-dasharray: 251; stroke-dashoffset: 25;">
+                            </circle>
+                        </svg>
+                        <span>72%</span>
+                        <p>Communication</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <h2 class="heading">My <span>Services</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>I provide expert web development services, building dynamic, scalable websites that are tailored
+                        to
+                        meet your specific business needs. From backend development to frontend functionality, I ensure
+                        seamless integration, robust performance, and a smooth user experience, helping you create a
+                        powerful online presence.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h3>Web Design</h3>
+                    <p>I specialize in crafting custom web designs that are both visually appealing and easy to
+                        navigate. My
+                        services focus on creating responsive, mobile-friendly websites that reflect your brand's unique
+                        style and objectives. Whether you need a new site or a redesign, I ensure a seamless, engaging
+                        user
+                        experience that drives results.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>DataBase</h3>
+                    <p>I offer expert database services, specializing in designing, optimizing, and managing efficient
+                        databases that ensure smooth data flow and secure storage. Whether you need database setup,
+                        migration, or performance tuning, I provide reliable solutions tailored to your business needs,
+                        ensuring your data is always accessible and well-organized.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="images/portfolio1.jpg" alt="image">
+
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>I've recently worked on a variety of web design projects, creating custom websites that are
+                            both
+                            visually stunning and highly functional. From e-commerce platforms to portfolio sites, I've
+                            designed responsive, user-friendly layouts that align with each client's unique brand. These
+                            projects highlight my ability to craft tailored experiences that engage visitors and drive
+                            results.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio2.jpg" alt="image">
+
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>I've recently worked on a variety of web design projects, creating custom websites that are
+                            both
+                            visually stunning and highly functional. From e-commerce platforms to portfolio sites, I've
+                            designed responsive, user-friendly layouts that align with each client's unique brand. These
+                            projects highlight my ability to craft tailored experiences that engage visitors and drive
+                            results.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio3.jpg" alt="image">
+
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>I've recently worked on a variety of web design projects, creating custom websites that are
+                            both
+                            visually stunning and highly functional. From e-commerce platforms to portfolio sites, I've
+                            designed responsive, user-friendly layouts that align with each client's unique brand. These
+                            projects highlight my ability to craft tailored experiences that engage visitors and drive
+                            results.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio4.jpg" alt="image">
+
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>I've recently worked on a variety of web design projects, creating custom websites that are
+                            both
+                            visually stunning and highly functional. From e-commerce platforms to portfolio sites, I've
+                            designed responsive, user-friendly layouts that align with each client's unique brand. These
+                            projects highlight my ability to craft tailored experiences that engage visitors and drive
+                            results.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio5.jpg" alt="image">
+
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>I've recently worked on a variety of web design projects, creating custom websites that are
+                            both
+                            visually stunning and highly functional. From e-commerce platforms to portfolio sites, I've
+                            designed responsive, user-friendly layouts that align with each client's unique brand. These
+                            projects highlight my ability to craft tailored experiences that engage visitors and drive
+                            results.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio6.jpg" alt="image">
+
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>I've recently worked on a variety of web design projects, creating custom websites that are
+                            both
+                            visually stunning and highly functional. From e-commerce platforms to portfolio sites, I've
+                            designed responsive, user-friendly layouts that align with each client's unique brand. These
+                            projects highlight my ability to craft tailored experiences that engage visitors and drive
+                            results.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" id=""></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2025 by Manojit | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
